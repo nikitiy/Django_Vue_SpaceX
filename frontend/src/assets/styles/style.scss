@@ -1,0 +1,69 @@
+@import "null";
+@import "variables";
+@import "fonts";
+
+html, body {
+    background: $color_black-blue;
+    font-family: "MuseoSansCyrl", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: $color_white;
+    position: relative;
+    z-index: -5;
+}
+
+a {
+    color: $color_white;
+}
+
+/* Wrapper */
+#wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 55px;
+    position: relative;
+}
+
+/* Title */
+.title {
+    font-size: 58px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 120%;
+    color: $color_white;
+    text-transform: uppercase;
+}
+.title_start {
+    text-align: start;
+}
+
+/* Adaptive */
+@media screen and (max-width: 1280px) {
+    .container {max-width: 1000px; padding: 0 40px;}
+    .title {font-size: 45px;}
+}
+
+@media screen and (max-width: 1000px) {
+    .container {max-width: 800px; padding: 0 30px;}
+}
+
+@media screen and (max-width: 800px) {
+    .container {max-width: 600px; padding: 0 30px;}
+}
+
+@media screen and (max-width: 600px) {
+    .container {max-width: 400px; padding: 0 15px;}
+}
+
+@media screen and (max-width: 400px) {
+    .container {max-width: 100%; padding: 0 15px;}
+}
