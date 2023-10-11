@@ -1,6 +1,6 @@
 # Django_Vue_SpaceX
 
-## Установка проекта
+### Установка проекта
 ```
 python3 -m venv venv
 pip install -r backend/requirements.txt
